@@ -1,0 +1,71 @@
+compile
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+ls
+exit
+compile
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+test:runMain Pipeline.Launcher Top --backend-name verilatorexit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+clear
+clean
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator
+exit
+test:runMain Pipeline.Launcher Top --backend-name verilator

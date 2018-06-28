@@ -1,0 +1,16 @@
+[0m[[0m[31merror[0m] [0m[0m/home/sun/computer_architecture/MIPS_Pipeline/MIPS_Pipeline/src/test/scala/Pipeline/PiplineTopTests.scala:94:30: unclosed comment[0m
+[0m[[0m[31merror[0m] [0m[0m            while(lastflag<2 /*&& cycles< 31000/*peek(c.io.MEM_WB_inst) != (inst_last)*/) [0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sun/computer_architecture/MIPS_Pipeline/MIPS_Pipeline/src/test/scala/Pipeline/PiplineTopTests.scala:48:3: Missing closing brace `}' assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m		poke(c.io.boot, 1)[0m
+[0m[[0m[31merror[0m] [0m[0m		^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sun/computer_architecture/MIPS_Pipeline/MIPS_Pipeline/src/test/scala/Pipeline/PiplineTopTests.scala:54:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    def WriteImm (filename : File) = {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sun/computer_architecture/MIPS_Pipeline/MIPS_Pipeline/src/test/scala/Pipeline/PiplineTopTests.scala:82:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    def RunCpu (defcycle : Int, filename : File, test_num : Int) = [0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sun/computer_architecture/MIPS_Pipeline/MIPS_Pipeline/src/test/scala/Pipeline/PiplineTopTests.scala:180:2: Missing closing brace `}' assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m

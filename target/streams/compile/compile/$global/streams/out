@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/sun/computer_architecture/MIPS_Pipeline/MIPS_Pipeline/src/main/scala/Pipeline/BranchPrediction.scala:147:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Boolean(false)[0m
+[0m[[0m[31merror[0m] [0m[0m required: chisel3.core.UInt[0m
+[0m[[0m[31merror[0m] [0m[0m    when(io.reset === false){[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
