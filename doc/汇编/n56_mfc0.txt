@@ -1,0 +1,45 @@
+   0:		3c043800 	lui	a0,0x3800		a0 = 3800 0000
+   4:		24020000 	li	v0,0
+   8:		3c08bfc0 	lui	t0,0xbfc0
+   c:		3508ffff 	ori	t0,t0,0xffff		t0 = bfc0 ffff  t0 = 8号寄存器
+  10:	40094000 	mfc0	t1,c0_badvaddr 		010000 00000 01001 01000 00000000 000
+								     Rt    Rd		  sel
+							GPR[rt] ← CP0[rd, sel]
+  14:	40096000 	mfc0	t1,c0_sr		t1 = 0
+  18:	00000000 	nop	
+  1c:	40896000 	mtc0	t1,c0_sr		010000 00100 01001 01100 00000000 000
+								     Rt    Rd		  sel
+							CP0[rd, sel] ← GPR[rt]
+  20:	00000000 	nop
+  24:	40096800 	mfc0	t1,c0_cause		010000 00000 01001 01101 00000000 000
+								     Rt    Rd		  sel
+							GPR[rt] ← CP0[rd, sel]
+
+  28:	00000000 	nop
+  2c:	40896800 	mtc0	t1,c0_cause
+  30:	00000000 	nop
+  34:	40097000 	mfc0	t1,c0_epc		010000 00000 01001 01110 00000000 000
+								     Rt    Rd		  sel
+							GPR[rt] ← CP0[rd, sel]
+
+  38:	40887000 	mtc0	t0,c0_epc		010000 00100 01000 01110 00000000 000
+								     Rt    Rd		  sel
+							CP0[rd, sel] ← GPR[rt]
+  3c:	00000000 	nop
+  40:	40107000 	mfc0	s0,c0_epc		010000 00000 10000 01110 00000000 000
+								     Rt    Rd		  sel
+							GPR[rt] ← CP0[rd, sel]
+
+  44:	40897000 	mtc0	t1,c0_epc
+  48:	15100005 	bne	t0,s0,60 <inst_error>	both t0 and s0 = bfc0 ffff
+  4c:	00000000 	nop
+  50:	14400003 	bnez	v0,60 <inst_error>
+  54:	00000000 	nop
+  58:	00000000 	nop
+  5c:	26730001 	addiu	s3,s3,1
+
+00000060 <inst_error>:
+  60:	00934025 	or	t0,a0,s3
+  64:	03e00008 	jr	ra
+  68:	ae280000 	sw	t0,0(s1)
+  6c:	00000000 	nop

@@ -1,0 +1,1387 @@
+
+n86_bltzal_ex_ds.o:     file format elf32-tradlittlemips
+
+Disassembly of section .data:
+
+00000000 <n86_bltzal_ex_ds_test>:
+       0:	3c045600 	lui	a0,0x5600
+       4:	001f6021 	addu	t4,zero,ra
+       8:	24020009 	li	v0,9
+       c:	00008021 	move	s0,zero
+      10:	00009021 	move	s2,zero
+      14:	3c087fff 	lui	t0,0x7fff
+      18:	3508ffff 	ori	t0,t0,0xffff
+      1c:	3c097fff 	lui	t1,0x7fff
+      20:	3529ffff 	ori	t1,t1,0xffff
+      24:	3c0a8002 	lui	t2,0x8002
+      28:	354afff0 	ori	t2,t2,0xfff0
+      2c:	ad480000 	sw	t0,0(t2)
+      30:	10000004 	b	44 <n86_bltzal_ex_ds_test+0x44>
+      34:	00000000 	nop
+      38:	26522222 	addiu	s2,s2,8738
+      3c:	10000007 	b	5c <n86_bltzal_ex_ds_test+0x5c>
+      40:	00000000 	nop
+      44:	26101111 	addiu	s0,s0,4369
+      48:	05500004 	bltzal	t2,5c <n86_bltzal_ex_ds_test+0x5c>
+      4c:	21147fff 	addi	s4,t0,32767
+      50:	26100002 	addiu	s0,s0,2
+      54:	26100002 	addiu	s0,s0,2
+      58:	26100002 	addiu	s0,s0,2
+      5c:	02129021 	addu	s2,s0,s2
+      60:	0180f821 	move	ra,t4
+      64:	24141117 	li	s4,4375
+      68:	169204ee 	bne	s4,s2,1424 <inst_error>
+      6c:	00000000 	nop
+      70:	3c144444 	lui	s4,0x4444
+      74:	168204eb 	bne	s4,v0,1424 <inst_error>
+      78:	00000000 	nop
+      7c:	24020009 	li	v0,9
+      80:	00008021 	move	s0,zero
+      84:	00009021 	move	s2,zero
+      88:	3c087fff 	lui	t0,0x7fff
+      8c:	3508ffff 	ori	t0,t0,0xffff
+      90:	3c097fff 	lui	t1,0x7fff
+      94:	3529ffff 	ori	t1,t1,0xffff
+      98:	3c0a8002 	lui	t2,0x8002
+      9c:	354afff0 	ori	t2,t2,0xfff0
+      a0:	ad480000 	sw	t0,0(t2)
+      a4:	10000004 	b	b8 <n86_bltzal_ex_ds_test+0xb8>
+      a8:	00000000 	nop
+      ac:	26522222 	addiu	s2,s2,8738
+      b0:	10000007 	b	d0 <n86_bltzal_ex_ds_test+0xd0>
+      b4:	00000000 	nop
+      b8:	26101111 	addiu	s0,s0,4369
+      bc:	05100004 	bltzal	t0,d0 <n86_bltzal_ex_ds_test+0xd0>
+      c0:	21147fff 	addi	s4,t0,32767
+      c4:	26100002 	addiu	s0,s0,2
+      c8:	26100002 	addiu	s0,s0,2
+      cc:	26100002 	addiu	s0,s0,2
+      d0:	02129021 	addu	s2,s0,s2
+      d4:	0180f821 	move	ra,t4
+      d8:	24141117 	li	s4,4375
+      dc:	169204d1 	bne	s4,s2,1424 <inst_error>
+      e0:	00000000 	nop
+      e4:	3c144444 	lui	s4,0x4444
+      e8:	168204ce 	bne	s4,v0,1424 <inst_error>
+      ec:	00000000 	nop
+      f0:	24020009 	li	v0,9
+      f4:	00008021 	move	s0,zero
+      f8:	00009021 	move	s2,zero
+      fc:	3c087fff 	lui	t0,0x7fff
+     100:	3508ffff 	ori	t0,t0,0xffff
+     104:	3c097fff 	lui	t1,0x7fff
+     108:	3529ffff 	ori	t1,t1,0xffff
+     10c:	3c0a8002 	lui	t2,0x8002
+     110:	354afff0 	ori	t2,t2,0xfff0
+     114:	ad480000 	sw	t0,0(t2)
+     118:	10000004 	b	12c <n86_bltzal_ex_ds_test+0x12c>
+     11c:	00000000 	nop
+     120:	26522222 	addiu	s2,s2,8738
+     124:	10000007 	b	144 <n86_bltzal_ex_ds_test+0x144>
+     128:	00000000 	nop
+     12c:	26101111 	addiu	s0,s0,4369
+     130:	0550fffb 	bltzal	t2,120 <n86_bltzal_ex_ds_test+0x120>
+     134:	21147fff 	addi	s4,t0,32767
+     138:	26100002 	addiu	s0,s0,2
+     13c:	26100002 	addiu	s0,s0,2
+     140:	26100002 	addiu	s0,s0,2
+     144:	02129021 	addu	s2,s0,s2
+     148:	0180f821 	move	ra,t4
+     14c:	24141117 	li	s4,4375
+     150:	169204b4 	bne	s4,s2,1424 <inst_error>
+     154:	00000000 	nop
+     158:	3c144444 	lui	s4,0x4444
+     15c:	168204b1 	bne	s4,v0,1424 <inst_error>
+     160:	00000000 	nop
+     164:	24020009 	li	v0,9
+     168:	00008021 	move	s0,zero
+     16c:	00009021 	move	s2,zero
+     170:	3c087fff 	lui	t0,0x7fff
+     174:	3508ffff 	ori	t0,t0,0xffff
+     178:	3c097fff 	lui	t1,0x7fff
+     17c:	3529ffff 	ori	t1,t1,0xffff
+     180:	3c0a8002 	lui	t2,0x8002
+     184:	354afff0 	ori	t2,t2,0xfff0
+     188:	ad480000 	sw	t0,0(t2)
+     18c:	10000004 	b	1a0 <n86_bltzal_ex_ds_test+0x1a0>
+     190:	00000000 	nop
+     194:	26522222 	addiu	s2,s2,8738
+     198:	10000007 	b	1b8 <n86_bltzal_ex_ds_test+0x1b8>
+     19c:	00000000 	nop
+     1a0:	26101111 	addiu	s0,s0,4369
+     1a4:	0510fffb 	bltzal	t0,194 <n86_bltzal_ex_ds_test+0x194>
+     1a8:	21147fff 	addi	s4,t0,32767
+     1ac:	26100002 	addiu	s0,s0,2
+     1b0:	26100002 	addiu	s0,s0,2
+     1b4:	26100002 	addiu	s0,s0,2
+     1b8:	02129021 	addu	s2,s0,s2
+     1bc:	0180f821 	move	ra,t4
+     1c0:	24141117 	li	s4,4375
+     1c4:	16920497 	bne	s4,s2,1424 <inst_error>
+     1c8:	00000000 	nop
+     1cc:	3c144444 	lui	s4,0x4444
+     1d0:	16820494 	bne	s4,v0,1424 <inst_error>
+     1d4:	00000000 	nop
+     1d8:	001f6021 	addu	t4,zero,ra
+     1dc:	24020009 	li	v0,9
+     1e0:	00008021 	move	s0,zero
+     1e4:	00009021 	move	s2,zero
+     1e8:	3c087fff 	lui	t0,0x7fff
+     1ec:	3508ffff 	ori	t0,t0,0xffff
+     1f0:	3c097fff 	lui	t1,0x7fff
+     1f4:	3529ffff 	ori	t1,t1,0xffff
+     1f8:	3c0a8002 	lui	t2,0x8002
+     1fc:	354afff0 	ori	t2,t2,0xfff0
+     200:	ad480000 	sw	t0,0(t2)
+     204:	10000004 	b	218 <n86_bltzal_ex_ds_test+0x218>
+     208:	00000000 	nop
+     20c:	26522222 	addiu	s2,s2,8738
+     210:	10000007 	b	230 <n86_bltzal_ex_ds_test+0x230>
+     214:	00000000 	nop
+     218:	26101111 	addiu	s0,s0,4369
+     21c:	05500004 	bltzal	t2,230 <n86_bltzal_ex_ds_test+0x230>
+     220:	0109a020 	add	s4,t0,t1
+     224:	26100002 	addiu	s0,s0,2
+     228:	26100002 	addiu	s0,s0,2
+     22c:	26100002 	addiu	s0,s0,2
+     230:	02129021 	addu	s2,s0,s2
+     234:	0180f821 	move	ra,t4
+     238:	24141117 	li	s4,4375
+     23c:	16920479 	bne	s4,s2,1424 <inst_error>
+     240:	00000000 	nop
+     244:	3c144444 	lui	s4,0x4444
+     248:	16820476 	bne	s4,v0,1424 <inst_error>
+     24c:	00000000 	nop
+     250:	24020009 	li	v0,9
+     254:	00008021 	move	s0,zero
+     258:	00009021 	move	s2,zero
+     25c:	3c087fff 	lui	t0,0x7fff
+     260:	3508ffff 	ori	t0,t0,0xffff
+     264:	3c097fff 	lui	t1,0x7fff
+     268:	3529ffff 	ori	t1,t1,0xffff
+     26c:	3c0a8002 	lui	t2,0x8002
+     270:	354afff0 	ori	t2,t2,0xfff0
+     274:	ad480000 	sw	t0,0(t2)
+     278:	10000004 	b	28c <n86_bltzal_ex_ds_test+0x28c>
+     27c:	00000000 	nop
+     280:	26522222 	addiu	s2,s2,8738
+     284:	10000007 	b	2a4 <n86_bltzal_ex_ds_test+0x2a4>
+     288:	00000000 	nop
+     28c:	26101111 	addiu	s0,s0,4369
+     290:	05100004 	bltzal	t0,2a4 <n86_bltzal_ex_ds_test+0x2a4>
+     294:	0109a020 	add	s4,t0,t1
+     298:	26100002 	addiu	s0,s0,2
+     29c:	26100002 	addiu	s0,s0,2
+     2a0:	26100002 	addiu	s0,s0,2
+     2a4:	02129021 	addu	s2,s0,s2
+     2a8:	0180f821 	move	ra,t4
+     2ac:	24141117 	li	s4,4375
+     2b0:	1692045c 	bne	s4,s2,1424 <inst_error>
+     2b4:	00000000 	nop
+     2b8:	3c144444 	lui	s4,0x4444
+     2bc:	16820459 	bne	s4,v0,1424 <inst_error>
+     2c0:	00000000 	nop
+     2c4:	24020009 	li	v0,9
+     2c8:	00008021 	move	s0,zero
+     2cc:	00009021 	move	s2,zero
+     2d0:	3c087fff 	lui	t0,0x7fff
+     2d4:	3508ffff 	ori	t0,t0,0xffff
+     2d8:	3c097fff 	lui	t1,0x7fff
+     2dc:	3529ffff 	ori	t1,t1,0xffff
+     2e0:	3c0a8002 	lui	t2,0x8002
+     2e4:	354afff0 	ori	t2,t2,0xfff0
+     2e8:	ad480000 	sw	t0,0(t2)
+     2ec:	10000004 	b	300 <n86_bltzal_ex_ds_test+0x300>
+     2f0:	00000000 	nop
+     2f4:	26522222 	addiu	s2,s2,8738
+     2f8:	10000007 	b	318 <n86_bltzal_ex_ds_test+0x318>
+     2fc:	00000000 	nop
+     300:	26101111 	addiu	s0,s0,4369
+     304:	0550fffb 	bltzal	t2,2f4 <n86_bltzal_ex_ds_test+0x2f4>
+     308:	0109a020 	add	s4,t0,t1
+     30c:	26100002 	addiu	s0,s0,2
+     310:	26100002 	addiu	s0,s0,2
+     314:	26100002 	addiu	s0,s0,2
+     318:	02129021 	addu	s2,s0,s2
+     31c:	0180f821 	move	ra,t4
+     320:	24141117 	li	s4,4375
+     324:	1692043f 	bne	s4,s2,1424 <inst_error>
+     328:	00000000 	nop
+     32c:	3c144444 	lui	s4,0x4444
+     330:	1682043c 	bne	s4,v0,1424 <inst_error>
+     334:	00000000 	nop
+     338:	24020009 	li	v0,9
+     33c:	00008021 	move	s0,zero
+     340:	00009021 	move	s2,zero
+     344:	3c087fff 	lui	t0,0x7fff
+     348:	3508ffff 	ori	t0,t0,0xffff
+     34c:	3c097fff 	lui	t1,0x7fff
+     350:	3529ffff 	ori	t1,t1,0xffff
+     354:	3c0a8002 	lui	t2,0x8002
+     358:	354afff0 	ori	t2,t2,0xfff0
+     35c:	ad480000 	sw	t0,0(t2)
+     360:	10000004 	b	374 <n86_bltzal_ex_ds_test+0x374>
+     364:	00000000 	nop
+     368:	26522222 	addiu	s2,s2,8738
+     36c:	10000007 	b	38c <n86_bltzal_ex_ds_test+0x38c>
+     370:	00000000 	nop
+     374:	26101111 	addiu	s0,s0,4369
+     378:	0510fffb 	bltzal	t0,368 <n86_bltzal_ex_ds_test+0x368>
+     37c:	0109a020 	add	s4,t0,t1
+     380:	26100002 	addiu	s0,s0,2
+     384:	26100002 	addiu	s0,s0,2
+     388:	26100002 	addiu	s0,s0,2
+     38c:	02129021 	addu	s2,s0,s2
+     390:	0180f821 	move	ra,t4
+     394:	24141117 	li	s4,4375
+     398:	16920422 	bne	s4,s2,1424 <inst_error>
+     39c:	00000000 	nop
+     3a0:	3c144444 	lui	s4,0x4444
+     3a4:	1682041f 	bne	s4,v0,1424 <inst_error>
+     3a8:	00000000 	nop
+     3ac:	001f6021 	addu	t4,zero,ra
+     3b0:	24020009 	li	v0,9
+     3b4:	00008021 	move	s0,zero
+     3b8:	00009021 	move	s2,zero
+     3bc:	3c087fff 	lui	t0,0x7fff
+     3c0:	3508ffff 	ori	t0,t0,0xffff
+     3c4:	3c097fff 	lui	t1,0x7fff
+     3c8:	3529ffff 	ori	t1,t1,0xffff
+     3cc:	3c0a8002 	lui	t2,0x8002
+     3d0:	354afff0 	ori	t2,t2,0xfff0
+     3d4:	ad480000 	sw	t0,0(t2)
+     3d8:	10000004 	b	3ec <n86_bltzal_ex_ds_test+0x3ec>
+     3dc:	00000000 	nop
+     3e0:	26522222 	addiu	s2,s2,8738
+     3e4:	10000007 	b	404 <n86_bltzal_ex_ds_test+0x404>
+     3e8:	00000000 	nop
+     3ec:	26101111 	addiu	s0,s0,4369
+     3f0:	05500004 	bltzal	t2,404 <n86_bltzal_ex_ds_test+0x404>
+     3f4:	010aa022 	sub	s4,t0,t2
+     3f8:	26100002 	addiu	s0,s0,2
+     3fc:	26100002 	addiu	s0,s0,2
+     400:	26100002 	addiu	s0,s0,2
+     404:	02129021 	addu	s2,s0,s2
+     408:	0180f821 	move	ra,t4
+     40c:	24141117 	li	s4,4375
+     410:	16920404 	bne	s4,s2,1424 <inst_error>
+     414:	00000000 	nop
+     418:	3c144444 	lui	s4,0x4444
+     41c:	16820401 	bne	s4,v0,1424 <inst_error>
+     420:	00000000 	nop
+     424:	24020009 	li	v0,9
+     428:	00008021 	move	s0,zero
+     42c:	00009021 	move	s2,zero
+     430:	3c087fff 	lui	t0,0x7fff
+     434:	3508ffff 	ori	t0,t0,0xffff
+     438:	3c097fff 	lui	t1,0x7fff
+     43c:	3529ffff 	ori	t1,t1,0xffff
+     440:	3c0a8002 	lui	t2,0x8002
+     444:	354afff0 	ori	t2,t2,0xfff0
+     448:	ad480000 	sw	t0,0(t2)
+     44c:	10000004 	b	460 <n86_bltzal_ex_ds_test+0x460>
+     450:	00000000 	nop
+     454:	26522222 	addiu	s2,s2,8738
+     458:	10000007 	b	478 <n86_bltzal_ex_ds_test+0x478>
+     45c:	00000000 	nop
+     460:	26101111 	addiu	s0,s0,4369
+     464:	05100004 	bltzal	t0,478 <n86_bltzal_ex_ds_test+0x478>
+     468:	010aa022 	sub	s4,t0,t2
+     46c:	26100002 	addiu	s0,s0,2
+     470:	26100002 	addiu	s0,s0,2
+     474:	26100002 	addiu	s0,s0,2
+     478:	02129021 	addu	s2,s0,s2
+     47c:	0180f821 	move	ra,t4
+     480:	24141117 	li	s4,4375
+     484:	169203e7 	bne	s4,s2,1424 <inst_error>
+     488:	00000000 	nop
+     48c:	3c144444 	lui	s4,0x4444
+     490:	168203e4 	bne	s4,v0,1424 <inst_error>
+     494:	00000000 	nop
+     498:	24020009 	li	v0,9
+     49c:	00008021 	move	s0,zero
+     4a0:	00009021 	move	s2,zero
+     4a4:	3c087fff 	lui	t0,0x7fff
+     4a8:	3508ffff 	ori	t0,t0,0xffff
+     4ac:	3c097fff 	lui	t1,0x7fff
+     4b0:	3529ffff 	ori	t1,t1,0xffff
+     4b4:	3c0a8002 	lui	t2,0x8002
+     4b8:	354afff0 	ori	t2,t2,0xfff0
+     4bc:	ad480000 	sw	t0,0(t2)
+     4c0:	10000004 	b	4d4 <n86_bltzal_ex_ds_test+0x4d4>
+     4c4:	00000000 	nop
+     4c8:	26522222 	addiu	s2,s2,8738
+     4cc:	10000007 	b	4ec <n86_bltzal_ex_ds_test+0x4ec>
+     4d0:	00000000 	nop
+     4d4:	26101111 	addiu	s0,s0,4369
+     4d8:	0550fffb 	bltzal	t2,4c8 <n86_bltzal_ex_ds_test+0x4c8>
+     4dc:	010aa022 	sub	s4,t0,t2
+     4e0:	26100002 	addiu	s0,s0,2
+     4e4:	26100002 	addiu	s0,s0,2
+     4e8:	26100002 	addiu	s0,s0,2
+     4ec:	02129021 	addu	s2,s0,s2
+     4f0:	0180f821 	move	ra,t4
+     4f4:	24141117 	li	s4,4375
+     4f8:	169203ca 	bne	s4,s2,1424 <inst_error>
+     4fc:	00000000 	nop
+     500:	3c144444 	lui	s4,0x4444
+     504:	168203c7 	bne	s4,v0,1424 <inst_error>
+     508:	00000000 	nop
+     50c:	24020009 	li	v0,9
+     510:	00008021 	move	s0,zero
+     514:	00009021 	move	s2,zero
+     518:	3c087fff 	lui	t0,0x7fff
+     51c:	3508ffff 	ori	t0,t0,0xffff
+     520:	3c097fff 	lui	t1,0x7fff
+     524:	3529ffff 	ori	t1,t1,0xffff
+     528:	3c0a8002 	lui	t2,0x8002
+     52c:	354afff0 	ori	t2,t2,0xfff0
+     530:	ad480000 	sw	t0,0(t2)
+     534:	10000004 	b	548 <n86_bltzal_ex_ds_test+0x548>
+     538:	00000000 	nop
+     53c:	26522222 	addiu	s2,s2,8738
+     540:	10000007 	b	560 <n86_bltzal_ex_ds_test+0x560>
+     544:	00000000 	nop
+     548:	26101111 	addiu	s0,s0,4369
+     54c:	0510fffb 	bltzal	t0,53c <n86_bltzal_ex_ds_test+0x53c>
+     550:	010aa022 	sub	s4,t0,t2
+     554:	26100002 	addiu	s0,s0,2
+     558:	26100002 	addiu	s0,s0,2
+     55c:	26100002 	addiu	s0,s0,2
+     560:	02129021 	addu	s2,s0,s2
+     564:	0180f821 	move	ra,t4
+     568:	24141117 	li	s4,4375
+     56c:	169203ad 	bne	s4,s2,1424 <inst_error>
+     570:	00000000 	nop
+     574:	3c144444 	lui	s4,0x4444
+     578:	168203aa 	bne	s4,v0,1424 <inst_error>
+     57c:	00000000 	nop
+     580:	001f6021 	addu	t4,zero,ra
+     584:	24020009 	li	v0,9
+     588:	00008021 	move	s0,zero
+     58c:	00009021 	move	s2,zero
+     590:	3c087fff 	lui	t0,0x7fff
+     594:	3508ffff 	ori	t0,t0,0xffff
+     598:	3c097fff 	lui	t1,0x7fff
+     59c:	3529ffff 	ori	t1,t1,0xffff
+     5a0:	3c0a8002 	lui	t2,0x8002
+     5a4:	354afff0 	ori	t2,t2,0xfff0
+     5a8:	ad480000 	sw	t0,0(t2)
+     5ac:	10000004 	b	5c0 <n86_bltzal_ex_ds_test+0x5c0>
+     5b0:	00000000 	nop
+     5b4:	26522222 	addiu	s2,s2,8738
+     5b8:	10000007 	b	5d8 <n86_bltzal_ex_ds_test+0x5d8>
+     5bc:	00000000 	nop
+     5c0:	26101111 	addiu	s0,s0,4369
+     5c4:	05500004 	bltzal	t2,5d8 <n86_bltzal_ex_ds_test+0x5d8>
+     5c8:	85540003 	lh	s4,3(t2)
+     5cc:	26100002 	addiu	s0,s0,2
+     5d0:	26100002 	addiu	s0,s0,2
+     5d4:	26100002 	addiu	s0,s0,2
+     5d8:	02129021 	addu	s2,s0,s2
+     5dc:	0180f821 	move	ra,t4
+     5e0:	24141117 	li	s4,4375
+     5e4:	1692038f 	bne	s4,s2,1424 <inst_error>
+     5e8:	00000000 	nop
+     5ec:	3c144444 	lui	s4,0x4444
+     5f0:	1682038c 	bne	s4,v0,1424 <inst_error>
+     5f4:	00000000 	nop
+     5f8:	24020009 	li	v0,9
+     5fc:	00008021 	move	s0,zero
+     600:	00009021 	move	s2,zero
+     604:	3c087fff 	lui	t0,0x7fff
+     608:	3508ffff 	ori	t0,t0,0xffff
+     60c:	3c097fff 	lui	t1,0x7fff
+     610:	3529ffff 	ori	t1,t1,0xffff
+     614:	3c0a8002 	lui	t2,0x8002
+     618:	354afff0 	ori	t2,t2,0xfff0
+     61c:	ad480000 	sw	t0,0(t2)
+     620:	10000004 	b	634 <n86_bltzal_ex_ds_test+0x634>
+     624:	00000000 	nop
+     628:	26522222 	addiu	s2,s2,8738
+     62c:	10000007 	b	64c <n86_bltzal_ex_ds_test+0x64c>
+     630:	00000000 	nop
+     634:	26101111 	addiu	s0,s0,4369
+     638:	05100004 	bltzal	t0,64c <n86_bltzal_ex_ds_test+0x64c>
+     63c:	85540003 	lh	s4,3(t2)
+     640:	26100002 	addiu	s0,s0,2
+     644:	26100002 	addiu	s0,s0,2
+     648:	26100002 	addiu	s0,s0,2
+     64c:	02129021 	addu	s2,s0,s2
+     650:	0180f821 	move	ra,t4
+     654:	24141117 	li	s4,4375
+     658:	16920372 	bne	s4,s2,1424 <inst_error>
+     65c:	00000000 	nop
+     660:	3c144444 	lui	s4,0x4444
+     664:	1682036f 	bne	s4,v0,1424 <inst_error>
+     668:	00000000 	nop
+     66c:	24020009 	li	v0,9
+     670:	00008021 	move	s0,zero
+     674:	00009021 	move	s2,zero
+     678:	3c087fff 	lui	t0,0x7fff
+     67c:	3508ffff 	ori	t0,t0,0xffff
+     680:	3c097fff 	lui	t1,0x7fff
+     684:	3529ffff 	ori	t1,t1,0xffff
+     688:	3c0a8002 	lui	t2,0x8002
+     68c:	354afff0 	ori	t2,t2,0xfff0
+     690:	ad480000 	sw	t0,0(t2)
+     694:	10000004 	b	6a8 <n86_bltzal_ex_ds_test+0x6a8>
+     698:	00000000 	nop
+     69c:	26522222 	addiu	s2,s2,8738
+     6a0:	10000007 	b	6c0 <n86_bltzal_ex_ds_test+0x6c0>
+     6a4:	00000000 	nop
+     6a8:	26101111 	addiu	s0,s0,4369
+     6ac:	0550fffb 	bltzal	t2,69c <n86_bltzal_ex_ds_test+0x69c>
+     6b0:	85540003 	lh	s4,3(t2)
+     6b4:	26100002 	addiu	s0,s0,2
+     6b8:	26100002 	addiu	s0,s0,2
+     6bc:	26100002 	addiu	s0,s0,2
+     6c0:	02129021 	addu	s2,s0,s2
+     6c4:	0180f821 	move	ra,t4
+     6c8:	24141117 	li	s4,4375
+     6cc:	16920355 	bne	s4,s2,1424 <inst_error>
+     6d0:	00000000 	nop
+     6d4:	3c144444 	lui	s4,0x4444
+     6d8:	16820352 	bne	s4,v0,1424 <inst_error>
+     6dc:	00000000 	nop
+     6e0:	24020009 	li	v0,9
+     6e4:	00008021 	move	s0,zero
+     6e8:	00009021 	move	s2,zero
+     6ec:	3c087fff 	lui	t0,0x7fff
+     6f0:	3508ffff 	ori	t0,t0,0xffff
+     6f4:	3c097fff 	lui	t1,0x7fff
+     6f8:	3529ffff 	ori	t1,t1,0xffff
+     6fc:	3c0a8002 	lui	t2,0x8002
+     700:	354afff0 	ori	t2,t2,0xfff0
+     704:	ad480000 	sw	t0,0(t2)
+     708:	10000004 	b	71c <n86_bltzal_ex_ds_test+0x71c>
+     70c:	00000000 	nop
+     710:	26522222 	addiu	s2,s2,8738
+     714:	10000007 	b	734 <n86_bltzal_ex_ds_test+0x734>
+     718:	00000000 	nop
+     71c:	26101111 	addiu	s0,s0,4369
+     720:	0510fffb 	bltzal	t0,710 <n86_bltzal_ex_ds_test+0x710>
+     724:	85540003 	lh	s4,3(t2)
+     728:	26100002 	addiu	s0,s0,2
+     72c:	26100002 	addiu	s0,s0,2
+     730:	26100002 	addiu	s0,s0,2
+     734:	02129021 	addu	s2,s0,s2
+     738:	0180f821 	move	ra,t4
+     73c:	24141117 	li	s4,4375
+     740:	16920338 	bne	s4,s2,1424 <inst_error>
+     744:	00000000 	nop
+     748:	3c144444 	lui	s4,0x4444
+     74c:	16820335 	bne	s4,v0,1424 <inst_error>
+     750:	00000000 	nop
+     754:	001f6021 	addu	t4,zero,ra
+     758:	24020009 	li	v0,9
+     75c:	00008021 	move	s0,zero
+     760:	00009021 	move	s2,zero
+     764:	3c087fff 	lui	t0,0x7fff
+     768:	3508ffff 	ori	t0,t0,0xffff
+     76c:	3c097fff 	lui	t1,0x7fff
+     770:	3529ffff 	ori	t1,t1,0xffff
+     774:	3c0a8002 	lui	t2,0x8002
+     778:	354afff0 	ori	t2,t2,0xfff0
+     77c:	ad480000 	sw	t0,0(t2)
+     780:	10000004 	b	794 <n86_bltzal_ex_ds_test+0x794>
+     784:	00000000 	nop
+     788:	26522222 	addiu	s2,s2,8738
+     78c:	10000007 	b	7ac <n86_bltzal_ex_ds_test+0x7ac>
+     790:	00000000 	nop
+     794:	26101111 	addiu	s0,s0,4369
+     798:	05500004 	bltzal	t2,7ac <n86_bltzal_ex_ds_test+0x7ac>
+     79c:	95540003 	lhu	s4,3(t2)
+     7a0:	26100002 	addiu	s0,s0,2
+     7a4:	26100002 	addiu	s0,s0,2
+     7a8:	26100002 	addiu	s0,s0,2
+     7ac:	02129021 	addu	s2,s0,s2
+     7b0:	0180f821 	move	ra,t4
+     7b4:	24141117 	li	s4,4375
+     7b8:	1692031a 	bne	s4,s2,1424 <inst_error>
+     7bc:	00000000 	nop
+     7c0:	3c144444 	lui	s4,0x4444
+     7c4:	16820317 	bne	s4,v0,1424 <inst_error>
+     7c8:	00000000 	nop
+     7cc:	24020009 	li	v0,9
+     7d0:	00008021 	move	s0,zero
+     7d4:	00009021 	move	s2,zero
+     7d8:	3c087fff 	lui	t0,0x7fff
+     7dc:	3508ffff 	ori	t0,t0,0xffff
+     7e0:	3c097fff 	lui	t1,0x7fff
+     7e4:	3529ffff 	ori	t1,t1,0xffff
+     7e8:	3c0a8002 	lui	t2,0x8002
+     7ec:	354afff0 	ori	t2,t2,0xfff0
+     7f0:	ad480000 	sw	t0,0(t2)
+     7f4:	10000004 	b	808 <n86_bltzal_ex_ds_test+0x808>
+     7f8:	00000000 	nop
+     7fc:	26522222 	addiu	s2,s2,8738
+     800:	10000007 	b	820 <n86_bltzal_ex_ds_test+0x820>
+     804:	00000000 	nop
+     808:	26101111 	addiu	s0,s0,4369
+     80c:	05100004 	bltzal	t0,820 <n86_bltzal_ex_ds_test+0x820>
+     810:	95540003 	lhu	s4,3(t2)
+     814:	26100002 	addiu	s0,s0,2
+     818:	26100002 	addiu	s0,s0,2
+     81c:	26100002 	addiu	s0,s0,2
+     820:	02129021 	addu	s2,s0,s2
+     824:	0180f821 	move	ra,t4
+     828:	24141117 	li	s4,4375
+     82c:	169202fd 	bne	s4,s2,1424 <inst_error>
+     830:	00000000 	nop
+     834:	3c144444 	lui	s4,0x4444
+     838:	168202fa 	bne	s4,v0,1424 <inst_error>
+     83c:	00000000 	nop
+     840:	24020009 	li	v0,9
+     844:	00008021 	move	s0,zero
+     848:	00009021 	move	s2,zero
+     84c:	3c087fff 	lui	t0,0x7fff
+     850:	3508ffff 	ori	t0,t0,0xffff
+     854:	3c097fff 	lui	t1,0x7fff
+     858:	3529ffff 	ori	t1,t1,0xffff
+     85c:	3c0a8002 	lui	t2,0x8002
+     860:	354afff0 	ori	t2,t2,0xfff0
+     864:	ad480000 	sw	t0,0(t2)
+     868:	10000004 	b	87c <n86_bltzal_ex_ds_test+0x87c>
+     86c:	00000000 	nop
+     870:	26522222 	addiu	s2,s2,8738
+     874:	10000007 	b	894 <n86_bltzal_ex_ds_test+0x894>
+     878:	00000000 	nop
+     87c:	26101111 	addiu	s0,s0,4369
+     880:	0550fffb 	bltzal	t2,870 <n86_bltzal_ex_ds_test+0x870>
+     884:	95540003 	lhu	s4,3(t2)
+     888:	26100002 	addiu	s0,s0,2
+     88c:	26100002 	addiu	s0,s0,2
+     890:	26100002 	addiu	s0,s0,2
+     894:	02129021 	addu	s2,s0,s2
+     898:	0180f821 	move	ra,t4
+     89c:	24141117 	li	s4,4375
+     8a0:	169202e0 	bne	s4,s2,1424 <inst_error>
+     8a4:	00000000 	nop
+     8a8:	3c144444 	lui	s4,0x4444
+     8ac:	168202dd 	bne	s4,v0,1424 <inst_error>
+     8b0:	00000000 	nop
+     8b4:	24020009 	li	v0,9
+     8b8:	00008021 	move	s0,zero
+     8bc:	00009021 	move	s2,zero
+     8c0:	3c087fff 	lui	t0,0x7fff
+     8c4:	3508ffff 	ori	t0,t0,0xffff
+     8c8:	3c097fff 	lui	t1,0x7fff
+     8cc:	3529ffff 	ori	t1,t1,0xffff
+     8d0:	3c0a8002 	lui	t2,0x8002
+     8d4:	354afff0 	ori	t2,t2,0xfff0
+     8d8:	ad480000 	sw	t0,0(t2)
+     8dc:	10000004 	b	8f0 <n86_bltzal_ex_ds_test+0x8f0>
+     8e0:	00000000 	nop
+     8e4:	26522222 	addiu	s2,s2,8738
+     8e8:	10000007 	b	908 <n86_bltzal_ex_ds_test+0x908>
+     8ec:	00000000 	nop
+     8f0:	26101111 	addiu	s0,s0,4369
+     8f4:	0510fffb 	bltzal	t0,8e4 <n86_bltzal_ex_ds_test+0x8e4>
+     8f8:	95540003 	lhu	s4,3(t2)
+     8fc:	26100002 	addiu	s0,s0,2
+     900:	26100002 	addiu	s0,s0,2
+     904:	26100002 	addiu	s0,s0,2
+     908:	02129021 	addu	s2,s0,s2
+     90c:	0180f821 	move	ra,t4
+     910:	24141117 	li	s4,4375
+     914:	169202c3 	bne	s4,s2,1424 <inst_error>
+     918:	00000000 	nop
+     91c:	3c144444 	lui	s4,0x4444
+     920:	168202c0 	bne	s4,v0,1424 <inst_error>
+     924:	00000000 	nop
+     928:	001f6021 	addu	t4,zero,ra
+     92c:	24020009 	li	v0,9
+     930:	00008021 	move	s0,zero
+     934:	00009021 	move	s2,zero
+     938:	3c087fff 	lui	t0,0x7fff
+     93c:	3508ffff 	ori	t0,t0,0xffff
+     940:	3c097fff 	lui	t1,0x7fff
+     944:	3529ffff 	ori	t1,t1,0xffff
+     948:	3c0a8002 	lui	t2,0x8002
+     94c:	354afff0 	ori	t2,t2,0xfff0
+     950:	ad480000 	sw	t0,0(t2)
+     954:	10000004 	b	968 <n86_bltzal_ex_ds_test+0x968>
+     958:	00000000 	nop
+     95c:	26522222 	addiu	s2,s2,8738
+     960:	10000007 	b	980 <n86_bltzal_ex_ds_test+0x980>
+     964:	00000000 	nop
+     968:	26101111 	addiu	s0,s0,4369
+     96c:	05500004 	bltzal	t2,980 <n86_bltzal_ex_ds_test+0x980>
+     970:	8d540003 	lw	s4,3(t2)
+     974:	26100002 	addiu	s0,s0,2
+     978:	26100002 	addiu	s0,s0,2
+     97c:	26100002 	addiu	s0,s0,2
+     980:	02129021 	addu	s2,s0,s2
+     984:	0180f821 	move	ra,t4
+     988:	24141117 	li	s4,4375
+     98c:	169202a5 	bne	s4,s2,1424 <inst_error>
+     990:	00000000 	nop
+     994:	3c144444 	lui	s4,0x4444
+     998:	168202a2 	bne	s4,v0,1424 <inst_error>
+     99c:	00000000 	nop
+     9a0:	24020009 	li	v0,9
+     9a4:	00008021 	move	s0,zero
+     9a8:	00009021 	move	s2,zero
+     9ac:	3c087fff 	lui	t0,0x7fff
+     9b0:	3508ffff 	ori	t0,t0,0xffff
+     9b4:	3c097fff 	lui	t1,0x7fff
+     9b8:	3529ffff 	ori	t1,t1,0xffff
+     9bc:	3c0a8002 	lui	t2,0x8002
+     9c0:	354afff0 	ori	t2,t2,0xfff0
+     9c4:	ad480000 	sw	t0,0(t2)
+     9c8:	10000004 	b	9dc <n86_bltzal_ex_ds_test+0x9dc>
+     9cc:	00000000 	nop
+     9d0:	26522222 	addiu	s2,s2,8738
+     9d4:	10000007 	b	9f4 <n86_bltzal_ex_ds_test+0x9f4>
+     9d8:	00000000 	nop
+     9dc:	26101111 	addiu	s0,s0,4369
+     9e0:	05100004 	bltzal	t0,9f4 <n86_bltzal_ex_ds_test+0x9f4>
+     9e4:	8d540003 	lw	s4,3(t2)
+     9e8:	26100002 	addiu	s0,s0,2
+     9ec:	26100002 	addiu	s0,s0,2
+     9f0:	26100002 	addiu	s0,s0,2
+     9f4:	02129021 	addu	s2,s0,s2
+     9f8:	0180f821 	move	ra,t4
+     9fc:	24141117 	li	s4,4375
+     a00:	16920288 	bne	s4,s2,1424 <inst_error>
+     a04:	00000000 	nop
+     a08:	3c144444 	lui	s4,0x4444
+     a0c:	16820285 	bne	s4,v0,1424 <inst_error>
+     a10:	00000000 	nop
+     a14:	24020009 	li	v0,9
+     a18:	00008021 	move	s0,zero
+     a1c:	00009021 	move	s2,zero
+     a20:	3c087fff 	lui	t0,0x7fff
+     a24:	3508ffff 	ori	t0,t0,0xffff
+     a28:	3c097fff 	lui	t1,0x7fff
+     a2c:	3529ffff 	ori	t1,t1,0xffff
+     a30:	3c0a8002 	lui	t2,0x8002
+     a34:	354afff0 	ori	t2,t2,0xfff0
+     a38:	ad480000 	sw	t0,0(t2)
+     a3c:	10000004 	b	a50 <n86_bltzal_ex_ds_test+0xa50>
+     a40:	00000000 	nop
+     a44:	26522222 	addiu	s2,s2,8738
+     a48:	10000007 	b	a68 <n86_bltzal_ex_ds_test+0xa68>
+     a4c:	00000000 	nop
+     a50:	26101111 	addiu	s0,s0,4369
+     a54:	0550fffb 	bltzal	t2,a44 <n86_bltzal_ex_ds_test+0xa44>
+     a58:	8d540003 	lw	s4,3(t2)
+     a5c:	26100002 	addiu	s0,s0,2
+     a60:	26100002 	addiu	s0,s0,2
+     a64:	26100002 	addiu	s0,s0,2
+     a68:	02129021 	addu	s2,s0,s2
+     a6c:	0180f821 	move	ra,t4
+     a70:	24141117 	li	s4,4375
+     a74:	1692026b 	bne	s4,s2,1424 <inst_error>
+     a78:	00000000 	nop
+     a7c:	3c144444 	lui	s4,0x4444
+     a80:	16820268 	bne	s4,v0,1424 <inst_error>
+     a84:	00000000 	nop
+     a88:	24020009 	li	v0,9
+     a8c:	00008021 	move	s0,zero
+     a90:	00009021 	move	s2,zero
+     a94:	3c087fff 	lui	t0,0x7fff
+     a98:	3508ffff 	ori	t0,t0,0xffff
+     a9c:	3c097fff 	lui	t1,0x7fff
+     aa0:	3529ffff 	ori	t1,t1,0xffff
+     aa4:	3c0a8002 	lui	t2,0x8002
+     aa8:	354afff0 	ori	t2,t2,0xfff0
+     aac:	ad480000 	sw	t0,0(t2)
+     ab0:	10000004 	b	ac4 <n86_bltzal_ex_ds_test+0xac4>
+     ab4:	00000000 	nop
+     ab8:	26522222 	addiu	s2,s2,8738
+     abc:	10000007 	b	adc <n86_bltzal_ex_ds_test+0xadc>
+     ac0:	00000000 	nop
+     ac4:	26101111 	addiu	s0,s0,4369
+     ac8:	0510fffb 	bltzal	t0,ab8 <n86_bltzal_ex_ds_test+0xab8>
+     acc:	8d540003 	lw	s4,3(t2)
+     ad0:	26100002 	addiu	s0,s0,2
+     ad4:	26100002 	addiu	s0,s0,2
+     ad8:	26100002 	addiu	s0,s0,2
+     adc:	02129021 	addu	s2,s0,s2
+     ae0:	0180f821 	move	ra,t4
+     ae4:	24141117 	li	s4,4375
+     ae8:	1692024e 	bne	s4,s2,1424 <inst_error>
+     aec:	00000000 	nop
+     af0:	3c144444 	lui	s4,0x4444
+     af4:	1682024b 	bne	s4,v0,1424 <inst_error>
+     af8:	00000000 	nop
+     afc:	001f6021 	addu	t4,zero,ra
+     b00:	24020009 	li	v0,9
+     b04:	00008021 	move	s0,zero
+     b08:	00009021 	move	s2,zero
+     b0c:	3c087fff 	lui	t0,0x7fff
+     b10:	3508ffff 	ori	t0,t0,0xffff
+     b14:	3c097fff 	lui	t1,0x7fff
+     b18:	3529ffff 	ori	t1,t1,0xffff
+     b1c:	3c0a8002 	lui	t2,0x8002
+     b20:	354afff0 	ori	t2,t2,0xfff0
+     b24:	ad480000 	sw	t0,0(t2)
+     b28:	10000004 	b	b3c <n86_bltzal_ex_ds_test+0xb3c>
+     b2c:	00000000 	nop
+     b30:	26522222 	addiu	s2,s2,8738
+     b34:	10000007 	b	b54 <n86_bltzal_ex_ds_test+0xb54>
+     b38:	00000000 	nop
+     b3c:	26101111 	addiu	s0,s0,4369
+     b40:	05500004 	bltzal	t2,b54 <n86_bltzal_ex_ds_test+0xb54>
+     b44:	a5540003 	sh	s4,3(t2)
+     b48:	26100002 	addiu	s0,s0,2
+     b4c:	26100002 	addiu	s0,s0,2
+     b50:	26100002 	addiu	s0,s0,2
+     b54:	02129021 	addu	s2,s0,s2
+     b58:	0180f821 	move	ra,t4
+     b5c:	24141117 	li	s4,4375
+     b60:	16920230 	bne	s4,s2,1424 <inst_error>
+     b64:	00000000 	nop
+     b68:	3c144444 	lui	s4,0x4444
+     b6c:	1682022d 	bne	s4,v0,1424 <inst_error>
+     b70:	00000000 	nop
+     b74:	24020009 	li	v0,9
+     b78:	00008021 	move	s0,zero
+     b7c:	00009021 	move	s2,zero
+     b80:	3c087fff 	lui	t0,0x7fff
+     b84:	3508ffff 	ori	t0,t0,0xffff
+     b88:	3c097fff 	lui	t1,0x7fff
+     b8c:	3529ffff 	ori	t1,t1,0xffff
+     b90:	3c0a8002 	lui	t2,0x8002
+     b94:	354afff0 	ori	t2,t2,0xfff0
+     b98:	ad480000 	sw	t0,0(t2)
+     b9c:	10000004 	b	bb0 <n86_bltzal_ex_ds_test+0xbb0>
+     ba0:	00000000 	nop
+     ba4:	26522222 	addiu	s2,s2,8738
+     ba8:	10000007 	b	bc8 <n86_bltzal_ex_ds_test+0xbc8>
+     bac:	00000000 	nop
+     bb0:	26101111 	addiu	s0,s0,4369
+     bb4:	05100004 	bltzal	t0,bc8 <n86_bltzal_ex_ds_test+0xbc8>
+     bb8:	a5540003 	sh	s4,3(t2)
+     bbc:	26100002 	addiu	s0,s0,2
+     bc0:	26100002 	addiu	s0,s0,2
+     bc4:	26100002 	addiu	s0,s0,2
+     bc8:	02129021 	addu	s2,s0,s2
+     bcc:	0180f821 	move	ra,t4
+     bd0:	24141117 	li	s4,4375
+     bd4:	16920213 	bne	s4,s2,1424 <inst_error>
+     bd8:	00000000 	nop
+     bdc:	3c144444 	lui	s4,0x4444
+     be0:	16820210 	bne	s4,v0,1424 <inst_error>
+     be4:	00000000 	nop
+     be8:	24020009 	li	v0,9
+     bec:	00008021 	move	s0,zero
+     bf0:	00009021 	move	s2,zero
+     bf4:	3c087fff 	lui	t0,0x7fff
+     bf8:	3508ffff 	ori	t0,t0,0xffff
+     bfc:	3c097fff 	lui	t1,0x7fff
+     c00:	3529ffff 	ori	t1,t1,0xffff
+     c04:	3c0a8002 	lui	t2,0x8002
+     c08:	354afff0 	ori	t2,t2,0xfff0
+     c0c:	ad480000 	sw	t0,0(t2)
+     c10:	10000004 	b	c24 <n86_bltzal_ex_ds_test+0xc24>
+     c14:	00000000 	nop
+     c18:	26522222 	addiu	s2,s2,8738
+     c1c:	10000007 	b	c3c <n86_bltzal_ex_ds_test+0xc3c>
+     c20:	00000000 	nop
+     c24:	26101111 	addiu	s0,s0,4369
+     c28:	0550fffb 	bltzal	t2,c18 <n86_bltzal_ex_ds_test+0xc18>
+     c2c:	a5540003 	sh	s4,3(t2)
+     c30:	26100002 	addiu	s0,s0,2
+     c34:	26100002 	addiu	s0,s0,2
+     c38:	26100002 	addiu	s0,s0,2
+     c3c:	02129021 	addu	s2,s0,s2
+     c40:	0180f821 	move	ra,t4
+     c44:	24141117 	li	s4,4375
+     c48:	169201f6 	bne	s4,s2,1424 <inst_error>
+     c4c:	00000000 	nop
+     c50:	3c144444 	lui	s4,0x4444
+     c54:	168201f3 	bne	s4,v0,1424 <inst_error>
+     c58:	00000000 	nop
+     c5c:	24020009 	li	v0,9
+     c60:	00008021 	move	s0,zero
+     c64:	00009021 	move	s2,zero
+     c68:	3c087fff 	lui	t0,0x7fff
+     c6c:	3508ffff 	ori	t0,t0,0xffff
+     c70:	3c097fff 	lui	t1,0x7fff
+     c74:	3529ffff 	ori	t1,t1,0xffff
+     c78:	3c0a8002 	lui	t2,0x8002
+     c7c:	354afff0 	ori	t2,t2,0xfff0
+     c80:	ad480000 	sw	t0,0(t2)
+     c84:	10000004 	b	c98 <n86_bltzal_ex_ds_test+0xc98>
+     c88:	00000000 	nop
+     c8c:	26522222 	addiu	s2,s2,8738
+     c90:	10000007 	b	cb0 <n86_bltzal_ex_ds_test+0xcb0>
+     c94:	00000000 	nop
+     c98:	26101111 	addiu	s0,s0,4369
+     c9c:	0510fffb 	bltzal	t0,c8c <n86_bltzal_ex_ds_test+0xc8c>
+     ca0:	a5540003 	sh	s4,3(t2)
+     ca4:	26100002 	addiu	s0,s0,2
+     ca8:	26100002 	addiu	s0,s0,2
+     cac:	26100002 	addiu	s0,s0,2
+     cb0:	02129021 	addu	s2,s0,s2
+     cb4:	0180f821 	move	ra,t4
+     cb8:	24141117 	li	s4,4375
+     cbc:	169201d9 	bne	s4,s2,1424 <inst_error>
+     cc0:	00000000 	nop
+     cc4:	3c144444 	lui	s4,0x4444
+     cc8:	168201d6 	bne	s4,v0,1424 <inst_error>
+     ccc:	00000000 	nop
+     cd0:	001f6021 	addu	t4,zero,ra
+     cd4:	24020009 	li	v0,9
+     cd8:	00008021 	move	s0,zero
+     cdc:	00009021 	move	s2,zero
+     ce0:	3c087fff 	lui	t0,0x7fff
+     ce4:	3508ffff 	ori	t0,t0,0xffff
+     ce8:	3c097fff 	lui	t1,0x7fff
+     cec:	3529ffff 	ori	t1,t1,0xffff
+     cf0:	3c0a8002 	lui	t2,0x8002
+     cf4:	354afff0 	ori	t2,t2,0xfff0
+     cf8:	ad480000 	sw	t0,0(t2)
+     cfc:	10000004 	b	d10 <n86_bltzal_ex_ds_test+0xd10>
+     d00:	00000000 	nop
+     d04:	26522222 	addiu	s2,s2,8738
+     d08:	10000007 	b	d28 <n86_bltzal_ex_ds_test+0xd28>
+     d0c:	00000000 	nop
+     d10:	26101111 	addiu	s0,s0,4369
+     d14:	05500004 	bltzal	t2,d28 <n86_bltzal_ex_ds_test+0xd28>
+     d18:	ad540003 	sw	s4,3(t2)
+     d1c:	26100002 	addiu	s0,s0,2
+     d20:	26100002 	addiu	s0,s0,2
+     d24:	26100002 	addiu	s0,s0,2
+     d28:	02129021 	addu	s2,s0,s2
+     d2c:	0180f821 	move	ra,t4
+     d30:	24141117 	li	s4,4375
+     d34:	169201bb 	bne	s4,s2,1424 <inst_error>
+     d38:	00000000 	nop
+     d3c:	3c144444 	lui	s4,0x4444
+     d40:	168201b8 	bne	s4,v0,1424 <inst_error>
+     d44:	00000000 	nop
+     d48:	24020009 	li	v0,9
+     d4c:	00008021 	move	s0,zero
+     d50:	00009021 	move	s2,zero
+     d54:	3c087fff 	lui	t0,0x7fff
+     d58:	3508ffff 	ori	t0,t0,0xffff
+     d5c:	3c097fff 	lui	t1,0x7fff
+     d60:	3529ffff 	ori	t1,t1,0xffff
+     d64:	3c0a8002 	lui	t2,0x8002
+     d68:	354afff0 	ori	t2,t2,0xfff0
+     d6c:	ad480000 	sw	t0,0(t2)
+     d70:	10000004 	b	d84 <n86_bltzal_ex_ds_test+0xd84>
+     d74:	00000000 	nop
+     d78:	26522222 	addiu	s2,s2,8738
+     d7c:	10000007 	b	d9c <n86_bltzal_ex_ds_test+0xd9c>
+     d80:	00000000 	nop
+     d84:	26101111 	addiu	s0,s0,4369
+     d88:	05100004 	bltzal	t0,d9c <n86_bltzal_ex_ds_test+0xd9c>
+     d8c:	ad540003 	sw	s4,3(t2)
+     d90:	26100002 	addiu	s0,s0,2
+     d94:	26100002 	addiu	s0,s0,2
+     d98:	26100002 	addiu	s0,s0,2
+     d9c:	02129021 	addu	s2,s0,s2
+     da0:	0180f821 	move	ra,t4
+     da4:	24141117 	li	s4,4375
+     da8:	1692019e 	bne	s4,s2,1424 <inst_error>
+     dac:	00000000 	nop
+     db0:	3c144444 	lui	s4,0x4444
+     db4:	1682019b 	bne	s4,v0,1424 <inst_error>
+     db8:	00000000 	nop
+     dbc:	24020009 	li	v0,9
+     dc0:	00008021 	move	s0,zero
+     dc4:	00009021 	move	s2,zero
+     dc8:	3c087fff 	lui	t0,0x7fff
+     dcc:	3508ffff 	ori	t0,t0,0xffff
+     dd0:	3c097fff 	lui	t1,0x7fff
+     dd4:	3529ffff 	ori	t1,t1,0xffff
+     dd8:	3c0a8002 	lui	t2,0x8002
+     ddc:	354afff0 	ori	t2,t2,0xfff0
+     de0:	ad480000 	sw	t0,0(t2)
+     de4:	10000004 	b	df8 <n86_bltzal_ex_ds_test+0xdf8>
+     de8:	00000000 	nop
+     dec:	26522222 	addiu	s2,s2,8738
+     df0:	10000007 	b	e10 <n86_bltzal_ex_ds_test+0xe10>
+     df4:	00000000 	nop
+     df8:	26101111 	addiu	s0,s0,4369
+     dfc:	0550fffb 	bltzal	t2,dec <n86_bltzal_ex_ds_test+0xdec>
+     e00:	ad540003 	sw	s4,3(t2)
+     e04:	26100002 	addiu	s0,s0,2
+     e08:	26100002 	addiu	s0,s0,2
+     e0c:	26100002 	addiu	s0,s0,2
+     e10:	02129021 	addu	s2,s0,s2
+     e14:	0180f821 	move	ra,t4
+     e18:	24141117 	li	s4,4375
+     e1c:	16920181 	bne	s4,s2,1424 <inst_error>
+     e20:	00000000 	nop
+     e24:	3c144444 	lui	s4,0x4444
+     e28:	1682017e 	bne	s4,v0,1424 <inst_error>
+     e2c:	00000000 	nop
+     e30:	24020009 	li	v0,9
+     e34:	00008021 	move	s0,zero
+     e38:	00009021 	move	s2,zero
+     e3c:	3c087fff 	lui	t0,0x7fff
+     e40:	3508ffff 	ori	t0,t0,0xffff
+     e44:	3c097fff 	lui	t1,0x7fff
+     e48:	3529ffff 	ori	t1,t1,0xffff
+     e4c:	3c0a8002 	lui	t2,0x8002
+     e50:	354afff0 	ori	t2,t2,0xfff0
+     e54:	ad480000 	sw	t0,0(t2)
+     e58:	10000004 	b	e6c <n86_bltzal_ex_ds_test+0xe6c>
+     e5c:	00000000 	nop
+     e60:	26522222 	addiu	s2,s2,8738
+     e64:	10000007 	b	e84 <n86_bltzal_ex_ds_test+0xe84>
+     e68:	00000000 	nop
+     e6c:	26101111 	addiu	s0,s0,4369
+     e70:	0510fffb 	bltzal	t0,e60 <n86_bltzal_ex_ds_test+0xe60>
+     e74:	ad540003 	sw	s4,3(t2)
+     e78:	26100002 	addiu	s0,s0,2
+     e7c:	26100002 	addiu	s0,s0,2
+     e80:	26100002 	addiu	s0,s0,2
+     e84:	02129021 	addu	s2,s0,s2
+     e88:	0180f821 	move	ra,t4
+     e8c:	24141117 	li	s4,4375
+     e90:	16920164 	bne	s4,s2,1424 <inst_error>
+     e94:	00000000 	nop
+     e98:	3c144444 	lui	s4,0x4444
+     e9c:	16820161 	bne	s4,v0,1424 <inst_error>
+     ea0:	00000000 	nop
+     ea4:	001f6021 	addu	t4,zero,ra
+     ea8:	24020009 	li	v0,9
+     eac:	00008021 	move	s0,zero
+     eb0:	00009021 	move	s2,zero
+     eb4:	3c087fff 	lui	t0,0x7fff
+     eb8:	3508ffff 	ori	t0,t0,0xffff
+     ebc:	3c097fff 	lui	t1,0x7fff
+     ec0:	3529ffff 	ori	t1,t1,0xffff
+     ec4:	3c0a8002 	lui	t2,0x8002
+     ec8:	354afff0 	ori	t2,t2,0xfff0
+     ecc:	ad480000 	sw	t0,0(t2)
+     ed0:	10000004 	b	ee4 <n86_bltzal_ex_ds_test+0xee4>
+     ed4:	00000000 	nop
+     ed8:	26522222 	addiu	s2,s2,8738
+     edc:	10000007 	b	efc <n86_bltzal_ex_ds_test+0xefc>
+     ee0:	00000000 	nop
+     ee4:	26101111 	addiu	s0,s0,4369
+     ee8:	05500004 	bltzal	t2,efc <n86_bltzal_ex_ds_test+0xefc>
+     eec:	6f76e210 	0x6f76e210
+     ef0:	26100002 	addiu	s0,s0,2
+     ef4:	26100002 	addiu	s0,s0,2
+     ef8:	26100002 	addiu	s0,s0,2
+     efc:	02129021 	addu	s2,s0,s2
+     f00:	0180f821 	move	ra,t4
+     f04:	24141117 	li	s4,4375
+     f08:	16920146 	bne	s4,s2,1424 <inst_error>
+     f0c:	00000000 	nop
+     f10:	3c144444 	lui	s4,0x4444
+     f14:	16820143 	bne	s4,v0,1424 <inst_error>
+     f18:	00000000 	nop
+     f1c:	24020009 	li	v0,9
+     f20:	00008021 	move	s0,zero
+     f24:	00009021 	move	s2,zero
+     f28:	3c087fff 	lui	t0,0x7fff
+     f2c:	3508ffff 	ori	t0,t0,0xffff
+     f30:	3c097fff 	lui	t1,0x7fff
+     f34:	3529ffff 	ori	t1,t1,0xffff
+     f38:	3c0a8002 	lui	t2,0x8002
+     f3c:	354afff0 	ori	t2,t2,0xfff0
+     f40:	ad480000 	sw	t0,0(t2)
+     f44:	10000004 	b	f58 <n86_bltzal_ex_ds_test+0xf58>
+     f48:	00000000 	nop
+     f4c:	26522222 	addiu	s2,s2,8738
+     f50:	10000007 	b	f70 <n86_bltzal_ex_ds_test+0xf70>
+     f54:	00000000 	nop
+     f58:	26101111 	addiu	s0,s0,4369
+     f5c:	05100004 	bltzal	t0,f70 <n86_bltzal_ex_ds_test+0xf70>
+     f60:	6f76e210 	0x6f76e210
+     f64:	26100002 	addiu	s0,s0,2
+     f68:	26100002 	addiu	s0,s0,2
+     f6c:	26100002 	addiu	s0,s0,2
+     f70:	02129021 	addu	s2,s0,s2
+     f74:	0180f821 	move	ra,t4
+     f78:	24141117 	li	s4,4375
+     f7c:	16920129 	bne	s4,s2,1424 <inst_error>
+     f80:	00000000 	nop
+     f84:	3c144444 	lui	s4,0x4444
+     f88:	16820126 	bne	s4,v0,1424 <inst_error>
+     f8c:	00000000 	nop
+     f90:	24020009 	li	v0,9
+     f94:	00008021 	move	s0,zero
+     f98:	00009021 	move	s2,zero
+     f9c:	3c087fff 	lui	t0,0x7fff
+     fa0:	3508ffff 	ori	t0,t0,0xffff
+     fa4:	3c097fff 	lui	t1,0x7fff
+     fa8:	3529ffff 	ori	t1,t1,0xffff
+     fac:	3c0a8002 	lui	t2,0x8002
+     fb0:	354afff0 	ori	t2,t2,0xfff0
+     fb4:	ad480000 	sw	t0,0(t2)
+     fb8:	10000004 	b	fcc <n86_bltzal_ex_ds_test+0xfcc>
+     fbc:	00000000 	nop
+     fc0:	26522222 	addiu	s2,s2,8738
+     fc4:	10000007 	b	fe4 <n86_bltzal_ex_ds_test+0xfe4>
+     fc8:	00000000 	nop
+     fcc:	26101111 	addiu	s0,s0,4369
+     fd0:	0550fffb 	bltzal	t2,fc0 <n86_bltzal_ex_ds_test+0xfc0>
+     fd4:	6f76e210 	0x6f76e210
+     fd8:	26100002 	addiu	s0,s0,2
+     fdc:	26100002 	addiu	s0,s0,2
+     fe0:	26100002 	addiu	s0,s0,2
+     fe4:	02129021 	addu	s2,s0,s2
+     fe8:	0180f821 	move	ra,t4
+     fec:	24141117 	li	s4,4375
+     ff0:	1692010c 	bne	s4,s2,1424 <inst_error>
+     ff4:	00000000 	nop
+     ff8:	3c144444 	lui	s4,0x4444
+     ffc:	16820109 	bne	s4,v0,1424 <inst_error>
+    1000:	00000000 	nop
+    1004:	24020009 	li	v0,9
+    1008:	00008021 	move	s0,zero
+    100c:	00009021 	move	s2,zero
+    1010:	3c087fff 	lui	t0,0x7fff
+    1014:	3508ffff 	ori	t0,t0,0xffff
+    1018:	3c097fff 	lui	t1,0x7fff
+    101c:	3529ffff 	ori	t1,t1,0xffff
+    1020:	3c0a8002 	lui	t2,0x8002
+    1024:	354afff0 	ori	t2,t2,0xfff0
+    1028:	ad480000 	sw	t0,0(t2)
+    102c:	10000004 	b	1040 <n86_bltzal_ex_ds_test+0x1040>
+    1030:	00000000 	nop
+    1034:	26522222 	addiu	s2,s2,8738
+    1038:	10000007 	b	1058 <n86_bltzal_ex_ds_test+0x1058>
+    103c:	00000000 	nop
+    1040:	26101111 	addiu	s0,s0,4369
+    1044:	0510fffb 	bltzal	t0,1034 <n86_bltzal_ex_ds_test+0x1034>
+    1048:	6f76e210 	0x6f76e210
+    104c:	26100002 	addiu	s0,s0,2
+    1050:	26100002 	addiu	s0,s0,2
+    1054:	26100002 	addiu	s0,s0,2
+    1058:	02129021 	addu	s2,s0,s2
+    105c:	0180f821 	move	ra,t4
+    1060:	24141117 	li	s4,4375
+    1064:	169200ef 	bne	s4,s2,1424 <inst_error>
+    1068:	00000000 	nop
+    106c:	3c144444 	lui	s4,0x4444
+    1070:	168200ec 	bne	s4,v0,1424 <inst_error>
+    1074:	00000000 	nop
+    1078:	001f6021 	addu	t4,zero,ra
+    107c:	24020009 	li	v0,9
+    1080:	00008021 	move	s0,zero
+    1084:	00009021 	move	s2,zero
+    1088:	3c087fff 	lui	t0,0x7fff
+    108c:	3508ffff 	ori	t0,t0,0xffff
+    1090:	3c097fff 	lui	t1,0x7fff
+    1094:	3529ffff 	ori	t1,t1,0xffff
+    1098:	3c0a8002 	lui	t2,0x8002
+    109c:	354afff0 	ori	t2,t2,0xfff0
+    10a0:	ad480000 	sw	t0,0(t2)
+    10a4:	10000004 	b	10b8 <n86_bltzal_ex_ds_test+0x10b8>
+    10a8:	00000000 	nop
+    10ac:	26522222 	addiu	s2,s2,8738
+    10b0:	10000007 	b	10d0 <n86_bltzal_ex_ds_test+0x10d0>
+    10b4:	00000000 	nop
+    10b8:	26101111 	addiu	s0,s0,4369
+    10bc:	05500004 	bltzal	t2,10d0 <n86_bltzal_ex_ds_test+0x10d0>
+    10c0:	0000000c 	syscall
+    10c4:	26100002 	addiu	s0,s0,2
+    10c8:	26100002 	addiu	s0,s0,2
+    10cc:	26100002 	addiu	s0,s0,2
+    10d0:	02129021 	addu	s2,s0,s2
+    10d4:	0180f821 	move	ra,t4
+    10d8:	24141117 	li	s4,4375
+    10dc:	169200d1 	bne	s4,s2,1424 <inst_error>
+    10e0:	00000000 	nop
+    10e4:	3c144444 	lui	s4,0x4444
+    10e8:	168200ce 	bne	s4,v0,1424 <inst_error>
+    10ec:	00000000 	nop
+    10f0:	24020009 	li	v0,9
+    10f4:	00008021 	move	s0,zero
+    10f8:	00009021 	move	s2,zero
+    10fc:	3c087fff 	lui	t0,0x7fff
+    1100:	3508ffff 	ori	t0,t0,0xffff
+    1104:	3c097fff 	lui	t1,0x7fff
+    1108:	3529ffff 	ori	t1,t1,0xffff
+    110c:	3c0a8002 	lui	t2,0x8002
+    1110:	354afff0 	ori	t2,t2,0xfff0
+    1114:	ad480000 	sw	t0,0(t2)
+    1118:	10000004 	b	112c <n86_bltzal_ex_ds_test+0x112c>
+    111c:	00000000 	nop
+    1120:	26522222 	addiu	s2,s2,8738
+    1124:	10000007 	b	1144 <n86_bltzal_ex_ds_test+0x1144>
+    1128:	00000000 	nop
+    112c:	26101111 	addiu	s0,s0,4369
+    1130:	05100004 	bltzal	t0,1144 <n86_bltzal_ex_ds_test+0x1144>
+    1134:	0000000c 	syscall
+    1138:	26100002 	addiu	s0,s0,2
+    113c:	26100002 	addiu	s0,s0,2
+    1140:	26100002 	addiu	s0,s0,2
+    1144:	02129021 	addu	s2,s0,s2
+    1148:	0180f821 	move	ra,t4
+    114c:	24141117 	li	s4,4375
+    1150:	169200b4 	bne	s4,s2,1424 <inst_error>
+    1154:	00000000 	nop
+    1158:	3c144444 	lui	s4,0x4444
+    115c:	168200b1 	bne	s4,v0,1424 <inst_error>
+    1160:	00000000 	nop
+    1164:	24020009 	li	v0,9
+    1168:	00008021 	move	s0,zero
+    116c:	00009021 	move	s2,zero
+    1170:	3c087fff 	lui	t0,0x7fff
+    1174:	3508ffff 	ori	t0,t0,0xffff
+    1178:	3c097fff 	lui	t1,0x7fff
+    117c:	3529ffff 	ori	t1,t1,0xffff
+    1180:	3c0a8002 	lui	t2,0x8002
+    1184:	354afff0 	ori	t2,t2,0xfff0
+    1188:	ad480000 	sw	t0,0(t2)
+    118c:	10000004 	b	11a0 <n86_bltzal_ex_ds_test+0x11a0>
+    1190:	00000000 	nop
+    1194:	26522222 	addiu	s2,s2,8738
+    1198:	10000007 	b	11b8 <n86_bltzal_ex_ds_test+0x11b8>
+    119c:	00000000 	nop
+    11a0:	26101111 	addiu	s0,s0,4369
+    11a4:	0550fffb 	bltzal	t2,1194 <n86_bltzal_ex_ds_test+0x1194>
+    11a8:	0000000c 	syscall
+    11ac:	26100002 	addiu	s0,s0,2
+    11b0:	26100002 	addiu	s0,s0,2
+    11b4:	26100002 	addiu	s0,s0,2
+    11b8:	02129021 	addu	s2,s0,s2
+    11bc:	0180f821 	move	ra,t4
+    11c0:	24141117 	li	s4,4375
+    11c4:	16920097 	bne	s4,s2,1424 <inst_error>
+    11c8:	00000000 	nop
+    11cc:	3c144444 	lui	s4,0x4444
+    11d0:	16820094 	bne	s4,v0,1424 <inst_error>
+    11d4:	00000000 	nop
+    11d8:	24020009 	li	v0,9
+    11dc:	00008021 	move	s0,zero
+    11e0:	00009021 	move	s2,zero
+    11e4:	3c087fff 	lui	t0,0x7fff
+    11e8:	3508ffff 	ori	t0,t0,0xffff
+    11ec:	3c097fff 	lui	t1,0x7fff
+    11f0:	3529ffff 	ori	t1,t1,0xffff
+    11f4:	3c0a8002 	lui	t2,0x8002
+    11f8:	354afff0 	ori	t2,t2,0xfff0
+    11fc:	ad480000 	sw	t0,0(t2)
+    1200:	10000004 	b	1214 <n86_bltzal_ex_ds_test+0x1214>
+    1204:	00000000 	nop
+    1208:	26522222 	addiu	s2,s2,8738
+    120c:	10000007 	b	122c <n86_bltzal_ex_ds_test+0x122c>
+    1210:	00000000 	nop
+    1214:	26101111 	addiu	s0,s0,4369
+    1218:	0510fffb 	bltzal	t0,1208 <n86_bltzal_ex_ds_test+0x1208>
+    121c:	0000000c 	syscall
+    1220:	26100002 	addiu	s0,s0,2
+    1224:	26100002 	addiu	s0,s0,2
+    1228:	26100002 	addiu	s0,s0,2
+    122c:	02129021 	addu	s2,s0,s2
+    1230:	0180f821 	move	ra,t4
+    1234:	24141117 	li	s4,4375
+    1238:	1692007a 	bne	s4,s2,1424 <inst_error>
+    123c:	00000000 	nop
+    1240:	3c144444 	lui	s4,0x4444
+    1244:	16820077 	bne	s4,v0,1424 <inst_error>
+    1248:	00000000 	nop
+    124c:	001f6021 	addu	t4,zero,ra
+    1250:	24020009 	li	v0,9
+    1254:	00008021 	move	s0,zero
+    1258:	00009021 	move	s2,zero
+    125c:	3c087fff 	lui	t0,0x7fff
+    1260:	3508ffff 	ori	t0,t0,0xffff
+    1264:	3c097fff 	lui	t1,0x7fff
+    1268:	3529ffff 	ori	t1,t1,0xffff
+    126c:	3c0a8002 	lui	t2,0x8002
+    1270:	354afff0 	ori	t2,t2,0xfff0
+    1274:	ad480000 	sw	t0,0(t2)
+    1278:	10000004 	b	128c <n86_bltzal_ex_ds_test+0x128c>
+    127c:	00000000 	nop
+    1280:	26522222 	addiu	s2,s2,8738
+    1284:	10000007 	b	12a4 <n86_bltzal_ex_ds_test+0x12a4>
+    1288:	00000000 	nop
+    128c:	26101111 	addiu	s0,s0,4369
+    1290:	05500004 	bltzal	t2,12a4 <n86_bltzal_ex_ds_test+0x12a4>
+    1294:	0000000d 	break
+    1298:	26100002 	addiu	s0,s0,2
+    129c:	26100002 	addiu	s0,s0,2
+    12a0:	26100002 	addiu	s0,s0,2
+    12a4:	02129021 	addu	s2,s0,s2
+    12a8:	0180f821 	move	ra,t4
+    12ac:	24141117 	li	s4,4375
+    12b0:	1692005c 	bne	s4,s2,1424 <inst_error>
+    12b4:	00000000 	nop
+    12b8:	3c144444 	lui	s4,0x4444
+    12bc:	16820059 	bne	s4,v0,1424 <inst_error>
+    12c0:	00000000 	nop
+    12c4:	24020009 	li	v0,9
+    12c8:	00008021 	move	s0,zero
+    12cc:	00009021 	move	s2,zero
+    12d0:	3c087fff 	lui	t0,0x7fff
+    12d4:	3508ffff 	ori	t0,t0,0xffff
+    12d8:	3c097fff 	lui	t1,0x7fff
+    12dc:	3529ffff 	ori	t1,t1,0xffff
+    12e0:	3c0a8002 	lui	t2,0x8002
+    12e4:	354afff0 	ori	t2,t2,0xfff0
+    12e8:	ad480000 	sw	t0,0(t2)
+    12ec:	10000004 	b	1300 <n86_bltzal_ex_ds_test+0x1300>
+    12f0:	00000000 	nop
+    12f4:	26522222 	addiu	s2,s2,8738
+    12f8:	10000007 	b	1318 <n86_bltzal_ex_ds_test+0x1318>
+    12fc:	00000000 	nop
+    1300:	26101111 	addiu	s0,s0,4369
+    1304:	05100004 	bltzal	t0,1318 <n86_bltzal_ex_ds_test+0x1318>
+    1308:	0000000d 	break
+    130c:	26100002 	addiu	s0,s0,2
+    1310:	26100002 	addiu	s0,s0,2
+    1314:	26100002 	addiu	s0,s0,2
+    1318:	02129021 	addu	s2,s0,s2
+    131c:	0180f821 	move	ra,t4
+    1320:	24141117 	li	s4,4375
+    1324:	1692003f 	bne	s4,s2,1424 <inst_error>
+    1328:	00000000 	nop
+    132c:	3c144444 	lui	s4,0x4444
+    1330:	1682003c 	bne	s4,v0,1424 <inst_error>
+    1334:	00000000 	nop
+    1338:	24020009 	li	v0,9
+    133c:	00008021 	move	s0,zero
+    1340:	00009021 	move	s2,zero
+    1344:	3c087fff 	lui	t0,0x7fff
+    1348:	3508ffff 	ori	t0,t0,0xffff
+    134c:	3c097fff 	lui	t1,0x7fff
+    1350:	3529ffff 	ori	t1,t1,0xffff
+    1354:	3c0a8002 	lui	t2,0x8002
+    1358:	354afff0 	ori	t2,t2,0xfff0
+    135c:	ad480000 	sw	t0,0(t2)
+    1360:	10000004 	b	1374 <n86_bltzal_ex_ds_test+0x1374>
+    1364:	00000000 	nop
+    1368:	26522222 	addiu	s2,s2,8738
+    136c:	10000007 	b	138c <n86_bltzal_ex_ds_test+0x138c>
+    1370:	00000000 	nop
+    1374:	26101111 	addiu	s0,s0,4369
+    1378:	0550fffb 	bltzal	t2,1368 <n86_bltzal_ex_ds_test+0x1368>
+    137c:	0000000d 	break
+    1380:	26100002 	addiu	s0,s0,2
+    1384:	26100002 	addiu	s0,s0,2
+    1388:	26100002 	addiu	s0,s0,2
+    138c:	02129021 	addu	s2,s0,s2
+    1390:	0180f821 	move	ra,t4
+    1394:	24141117 	li	s4,4375
+    1398:	16920022 	bne	s4,s2,1424 <inst_error>
+    139c:	00000000 	nop
+    13a0:	3c144444 	lui	s4,0x4444
+    13a4:	1682001f 	bne	s4,v0,1424 <inst_error>
+    13a8:	00000000 	nop
+    13ac:	24020009 	li	v0,9
+    13b0:	00008021 	move	s0,zero
+    13b4:	00009021 	move	s2,zero
+    13b8:	3c087fff 	lui	t0,0x7fff
+    13bc:	3508ffff 	ori	t0,t0,0xffff
+    13c0:	3c097fff 	lui	t1,0x7fff
+    13c4:	3529ffff 	ori	t1,t1,0xffff
+    13c8:	3c0a8002 	lui	t2,0x8002
+    13cc:	354afff0 	ori	t2,t2,0xfff0
+    13d0:	ad480000 	sw	t0,0(t2)
+    13d4:	10000004 	b	13e8 <n86_bltzal_ex_ds_test+0x13e8>
+    13d8:	00000000 	nop
+    13dc:	26522222 	addiu	s2,s2,8738
+    13e0:	10000007 	b	1400 <n86_bltzal_ex_ds_test+0x1400>
+    13e4:	00000000 	nop
+    13e8:	26101111 	addiu	s0,s0,4369
+    13ec:	0510fffb 	bltzal	t0,13dc <n86_bltzal_ex_ds_test+0x13dc>
+    13f0:	0000000d 	break
+    13f4:	26100002 	addiu	s0,s0,2
+    13f8:	26100002 	addiu	s0,s0,2
+    13fc:	26100002 	addiu	s0,s0,2
+    1400:	02129021 	addu	s2,s0,s2
+    1404:	0180f821 	move	ra,t4
+    1408:	24141117 	li	s4,4375
+    140c:	16920005 	bne	s4,s2,1424 <inst_error>
+    1410:	00000000 	nop
+    1414:	3c144444 	lui	s4,0x4444
+    1418:	16820002 	bne	s4,v0,1424 <inst_error>
+    141c:	00000000 	nop
+    1420:	26730001 	addiu	s3,s3,1
+
+00001424 <inst_error>:
+    1424:	00934025 	or	t0,a0,s3
+    1428:	ae280000 	sw	t0,0(s1)
+    142c:	03e00008 	jr	ra
+    1430:	00000000 	nop
+	...
+Disassembly of section .reginfo:
+
+00000000 <.reginfo>:
+   0:	801f1714 	lb	ra,5908(zero)
+	...
+Disassembly of section .debug_line:
+
+00000000 <.debug_line>:
+   0:	0000006f 	0x6f
+   4:	00290002 	0x290002
+   8:	01010000 	0x1010000
+   c:	000d0efb 	0xd0efb
+  10:	01010101 	0x1010101
+  14:	01000000 	0x1000000
+  18:	00010000 	sll	zero,at,0x0
+  1c:	5f36386e 	0x5f36386e
+  20:	7a746c62 	0x7a746c62
+  24:	655f6c61 	0x655f6c61
+  28:	73645f78 	0x73645f78
+  2c:	0000532e 	0x532e
+  30:	00000000 	nop
+  34:	00000205 	0x205
+  38:	0c030000 	jal	c0000 <inst_error+0xbebdc>
+  3c:	d4024d01 	0xd4024d01
+  40:	d4021303 	0xd4021303
+  44:	d4021303 	0xd4021303
+  48:	d4021303 	0xd4021303
+  4c:	d4021303 	0xd4021303
+  50:	d4021303 	0xd4021303
+  54:	d4021303 	0xd4021303
+  58:	d4021303 	0xd4021303
+  5c:	d4021303 	0xd4021303
+  60:	d4021303 	0xd4021303
+  64:	d4021303 	0xd4021303
+  68:	4b4d1803 	c2	0x14d1803
+  6c:	04024b4b 	0x4024b4b
+  70:	Address 0x0000000000000070 is out of bounds.
+
+Disassembly of section .debug_info:
+
+00000000 <.debug_info>:
+   0:	0000006c 	0x6c
+   4:	00000002 	srl	zero,zero,0x0
+   8:	01040000 	0x1040000
+	...
+  14:	00001434 	0x1434
+  18:	5f36386e 	0x5f36386e
+  1c:	7a746c62 	0x7a746c62
+  20:	655f6c61 	0x655f6c61
+  24:	73645f78 	0x73645f78
+  28:	2f00532e 	sltiu	zero,t8,21294
+  2c:	6964656d 	0x6964656d
+  30:	66732f61 	0x66732f61
+  34:	6f6f6c5f 	0x6f6f6c5f
+  38:	6f73676e 	0x6f73676e
+  3c:	30322f6e 	andi	s2,at,0x2f6e
+  40:	35303731 	ori	s0,t1,0x3731
+  44:	662f3133 	0x662f3133
+  48:	5f636e75 	0x5f636e75
+  4c:	74736574 	jalx	1cd95d0 <inst_error+0x1cd81ac>
+  50:	666f732f 	0x666f732f
+  54:	72732f74 	0x72732f74
+  58:	6e692f63 	0x6e692f63
+  5c:	47007473 	c1	0x1007473
+  60:	4120554e 	0x4120554e
+  64:	2e322053 	sltiu	s2,s1,8275
+  68:	352e3831 	ori	t6,t1,0x3831
+  6c:	80010030 	lb	at,48(zero)
+Disassembly of section .debug_abbrev:
+
+00000000 <.debug_abbrev>:
+   0:	10001101 	b	4408 <inst_error+0x2fe4>
+   4:	12011106 	beq	s0,at,4420 <inst_error+0x2ffc>
+   8:	1b080301 	0x1b080301
+   c:	13082508 	beq	t8,t0,9430 <inst_error+0x800c>
+  10:	00000005 	0x5
+Disassembly of section .debug_aranges:
+
+00000000 <.debug_aranges>:
+   0:	0000001c 	0x1c
+   4:	00000002 	srl	zero,zero,0x0
+   8:	00040000 	sll	zero,a0,0x0
+	...
+  14:	00001434 	0x1434
+	...

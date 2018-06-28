@@ -1,0 +1,145 @@
+
+n77_jal_ds.o:     file format elf32-tradlittlemips
+
+Disassembly of section .data:
+
+00000000 <n77_jal_ds_test>:
+   0:	3c044d00 	lui	a0,0x4d00
+   4:	24020000 	li	v0,0
+   8:	001f6021 	addu	t4,zero,ra
+   c:	00008021 	move	s0,zero
+  10:	00009021 	move	s2,zero
+  14:	3c081234 	lui	t0,0x1234
+  18:	35085678 	ori	t0,t0,0x5678
+  1c:	3c091234 	lui	t1,0x1234
+  20:	35295678 	ori	t1,t1,0x5678
+  24:	3c0a8765 	lui	t2,0x8765
+  28:	354a4321 	ori	t2,t2,0x4321
+  2c:	10000010 	b	70 <n77_jal_ds_test+0x70>
+  30:	00000000 	nop
+  34:	26101111 	addiu	s0,s0,4369
+  38:	0c000031 	jal	c4 <n77_jal_ds_test+0xc4>
+  3c:	26100001 	addiu	s0,s0,1
+  40:	26100001 	addiu	s0,s0,1
+  44:	26100001 	addiu	s0,s0,1
+  48:	26100001 	addiu	s0,s0,1
+  4c:	1000001d 	b	c4 <n77_jal_ds_test+0xc4>
+  50:	00000000 	nop
+  54:	00000021 	move	zero,zero
+  58:	00000021 	move	zero,zero
+  5c:	00000021 	move	zero,zero
+  60:	00000021 	move	zero,zero
+  64:	00000021 	move	zero,zero
+  68:	00000021 	move	zero,zero
+  6c:	00000021 	move	zero,zero
+  70:	0c00000d 	jal	34 <n77_jal_ds_test+0x34>
+  74:	01098021 	addu	s0,t0,t1
+  78:	2610ffff 	addiu	s0,s0,-1
+  7c:	2610ffff 	addiu	s0,s0,-1
+  80:	1000ffec 	b	34 <n77_jal_ds_test+0x34>
+  84:	00000000 	nop
+  88:	00000021 	move	zero,zero
+  8c:	00000021 	move	zero,zero
+  90:	00000021 	move	zero,zero
+  94:	00000021 	move	zero,zero
+  98:	00000021 	move	zero,zero
+  9c:	00000021 	move	zero,zero
+  a0:	00000021 	move	zero,zero
+  a4:	00000021 	move	zero,zero
+  a8:	00000021 	move	zero,zero
+  ac:	00000021 	move	zero,zero
+  b0:	00000021 	move	zero,zero
+  b4:	00000021 	move	zero,zero
+  b8:	00000021 	move	zero,zero
+  bc:	00000021 	move	zero,zero
+  c0:	00000021 	move	zero,zero
+  c4:	012a9021 	addu	s2,t1,t2
+  c8:	02129021 	addu	s2,s0,s2
+  cc:	00000000 	nop
+  d0:	0180f821 	move	ra,t4
+  d4:	3c14be02 	lui	s4,0xbe02
+  d8:	3694579b 	ori	s4,s4,0x579b
+  dc:	16920004 	bne	s4,s2,f0 <inst_error>
+  e0:	00000000 	nop
+  e4:	14400002 	bnez	v0,f0 <inst_error>
+  e8:	00000000 	nop
+  ec:	26730001 	addiu	s3,s3,1
+
+000000f0 <inst_error>:
+  f0:	00934025 	or	t0,a0,s3
+  f4:	ae280000 	sw	t0,0(s1)
+  f8:	03e00008 	jr	ra
+  fc:	00000000 	nop
+Disassembly of section .reginfo:
+
+00000000 <.reginfo>:
+   0:	801f1714 	lb	ra,5908(zero)
+	...
+Disassembly of section .debug_line:
+
+00000000 <.debug_line>:
+   0:	00000044 	0x44
+   4:	00230002 	0x230002
+   8:	01010000 	0x1010000
+   c:	000d0efb 	0xd0efb
+  10:	01010101 	0x1010101
+  14:	01000000 	0x1000000
+  18:	00010000 	sll	zero,at,0x0
+  1c:	5f37376e 	0x5f37376e
+  20:	5f6c616a 	0x5f6c616a
+  24:	532e7364 	0x532e7364
+  28:	00000000 	nop
+  2c:	02050000 	0x2050000
+  30:	00000000 	nop
+  34:	4b010c03 	c2	0x1010c03
+  38:	01dc024c 	syscall	0x77009
+  3c:	4d4c4b14 	0x4d4c4b14
+  40:	024b4b4b 	0x24b4b4b
+  44:	01010004 	sllv	zero,at,t0
+Disassembly of section .debug_info:
+
+00000000 <.debug_info>:
+   0:	00000066 	0x66
+   4:	00000002 	srl	zero,zero,0x0
+   8:	01040000 	0x1040000
+	...
+  14:	00000100 	sll	zero,zero,0x4
+  18:	5f37376e 	0x5f37376e
+  1c:	5f6c616a 	0x5f6c616a
+  20:	532e7364 	0x532e7364
+  24:	656d2f00 	0x656d2f00
+  28:	2f616964 	sltiu	at,k1,26980
+  2c:	6c5f6673 	0x6c5f6673
+  30:	676e6f6f 	0x676e6f6f
+  34:	2f6e6f73 	sltiu	t6,k1,28531
+  38:	37313032 	ori	s1,t9,0x3032
+  3c:	31333530 	andi	s3,t1,0x3530
+  40:	6e75662f 	0x6e75662f
+  44:	65745f63 	0x65745f63
+  48:	732f7473 	0x732f7473
+  4c:	2f74666f 	sltiu	s4,k1,26223
+  50:	2f637273 	sltiu	v1,k1,29299
+  54:	74736e69 	jalx	1cdb9a4 <inst_error+0x1cdb8b4>
+  58:	554e4700 	0x554e4700
+  5c:	20534120 	addi	s3,v0,16672
+  60:	38312e32 	xori	s1,at,0x2e32
+  64:	0030352e 	0x30352e
+  68:	Address 0x0000000000000068 is out of bounds.
+
+Disassembly of section .debug_abbrev:
+
+00000000 <.debug_abbrev>:
+   0:	10001101 	b	4408 <inst_error+0x4318>
+   4:	12011106 	beq	s0,at,4420 <inst_error+0x4330>
+   8:	1b080301 	0x1b080301
+   c:	13082508 	beq	t8,t0,9430 <inst_error+0x9340>
+  10:	00000005 	0x5
+Disassembly of section .debug_aranges:
+
+00000000 <.debug_aranges>:
+   0:	0000001c 	0x1c
+   4:	00000002 	srl	zero,zero,0x0
+   8:	00040000 	sll	zero,a0,0x0
+	...
+  14:	00000100 	sll	zero,zero,0x4
+	...

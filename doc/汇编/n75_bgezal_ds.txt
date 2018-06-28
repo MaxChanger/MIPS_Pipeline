@@ -1,0 +1,163 @@
+
+n75_bgezal_ds.o:     file format elf32-tradlittlemips
+
+Disassembly of section .data:
+
+00000000 <n75_bgezal_ds_test>:
+   0:	3c044b00 	lui	a0,0x4b00
+   4:	24020000 	li	v0,0
+   8:	001f6021 	addu	t4,zero,ra
+   c:	00008021 	move	s0,zero
+  10:	00009021 	move	s2,zero
+  14:	3c081234 	lui	t0,0x1234
+  18:	35085678 	ori	t0,t0,0x5678
+  1c:	3c091234 	lui	t1,0x1234
+  20:	35295678 	ori	t1,t1,0x5678
+  24:	3c0a8765 	lui	t2,0x8765
+  28:	354a4321 	ori	t2,t2,0x4321
+  2c:	1000001e 	b	a8 <n75_bgezal_ds_test+0xa8>
+  30:	00000000 	nop
+  34:	26101111 	addiu	s0,s0,4369
+  38:	0511002e 	bgezal	t0,f4 <n75_bgezal_ds_test+0xf4>
+  3c:	26100001 	addiu	s0,s0,1
+  40:	26100001 	addiu	s0,s0,1
+  44:	26100001 	addiu	s0,s0,1
+  48:	26100001 	addiu	s0,s0,1
+  4c:	10000029 	b	f4 <n75_bgezal_ds_test+0xf4>
+  50:	00000000 	nop
+  54:	26522222 	addiu	s2,s2,8738
+  58:	05510029 	bgezal	t2,100 <n75_bgezal_ds_test+0x100>
+  5c:	26100001 	addiu	s0,s0,1
+  60:	26520001 	addiu	s2,s2,1
+  64:	26520001 	addiu	s2,s2,1
+  68:	26520001 	addiu	s2,s2,1
+  6c:	10000024 	b	100 <n75_bgezal_ds_test+0x100>
+  70:	00000000 	nop
+  74:	00000021 	move	zero,zero
+  78:	00000021 	move	zero,zero
+  7c:	00000021 	move	zero,zero
+  80:	00000021 	move	zero,zero
+  84:	00000021 	move	zero,zero
+  88:	00000021 	move	zero,zero
+  8c:	00000021 	move	zero,zero
+  90:	00000021 	move	zero,zero
+  94:	00000021 	move	zero,zero
+  98:	00000021 	move	zero,zero
+  9c:	00000021 	move	zero,zero
+  a0:	00000021 	move	zero,zero
+  a4:	00000021 	move	zero,zero
+  a8:	0511ffe2 	bgezal	t0,34 <n75_bgezal_ds_test+0x34>
+  ac:	01098021 	addu	s0,t0,t1
+  b0:	2610ffff 	addiu	s0,s0,-1
+  b4:	2610ffff 	addiu	s0,s0,-1
+  b8:	1000ffde 	b	34 <n75_bgezal_ds_test+0x34>
+  bc:	00000000 	nop
+  c0:	0551ffe4 	bgezal	t2,54 <n75_bgezal_ds_test+0x54>
+  c4:	020a8021 	addu	s0,s0,t2
+  c8:	2610ffff 	addiu	s0,s0,-1
+  cc:	2610ffff 	addiu	s0,s0,-1
+  d0:	1000ffe0 	b	54 <n75_bgezal_ds_test+0x54>
+  d4:	00000000 	nop
+  d8:	00000021 	move	zero,zero
+  dc:	00000021 	move	zero,zero
+  e0:	00000021 	move	zero,zero
+  e4:	00000021 	move	zero,zero
+  e8:	00000021 	move	zero,zero
+  ec:	00000021 	move	zero,zero
+  f0:	00000021 	move	zero,zero
+  f4:	012a9021 	addu	s2,t1,t2
+  f8:	1000fff1 	b	c0 <n75_bgezal_ds_test+0xc0>
+  fc:	00000000 	nop
+ 100:	02129021 	addu	s2,s0,s2
+ 104:	00000000 	nop
+ 108:	0180f821 	move	ra,t4
+ 10c:	3c144567 	lui	s4,0x4567
+ 110:	3694bce0 	ori	s4,s4,0xbce0
+ 114:	16920004 	bne	s4,s2,128 <inst_error>
+ 118:	00000000 	nop
+ 11c:	14400002 	bnez	v0,128 <inst_error>
+ 120:	00000000 	nop
+ 124:	26730001 	addiu	s3,s3,1
+
+00000128 <inst_error>:
+ 128:	00934025 	or	t0,a0,s3
+ 12c:	ae280000 	sw	t0,0(s1)
+ 130:	03e00008 	jr	ra
+ 134:	00000000 	nop
+	...
+Disassembly of section .reginfo:
+
+00000000 <.reginfo>:
+   0:	801f1714 	lb	ra,5908(zero)
+	...
+Disassembly of section .debug_line:
+
+00000000 <.debug_line>:
+   0:	00000047 	0x47
+   4:	00260002 	0x260002
+   8:	01010000 	0x1010000
+   c:	000d0efb 	0xd0efb
+  10:	01010101 	0x1010101
+  14:	01000000 	0x1000000
+  18:	00010000 	sll	zero,at,0x0
+  1c:	5f35376e 	0x5f35376e
+  20:	7a656762 	0x7a656762
+  24:	645f6c61 	0x645f6c61
+  28:	00532e73 	0x532e73
+  2c:	00000000 	nop
+  30:	00020500 	sll	zero,v0,0x14
+  34:	03000000 	0x3000000
+  38:	4c4b010c 	0x4c4b010c
+  3c:	14029402 	bne	zero,v0,fffe5048 <inst_error+0xfffe4f20>
+  40:	4b4d4c4b 	c2	0x14d4c4b
+  44:	04024b4b 	0x4024b4b
+  48:	Address 0x0000000000000048 is out of bounds.
+
+Disassembly of section .debug_info:
+
+00000000 <.debug_info>:
+   0:	00000069 	0x69
+   4:	00000002 	srl	zero,zero,0x0
+   8:	01040000 	0x1040000
+	...
+  14:	00000138 	0x138
+  18:	5f35376e 	0x5f35376e
+  1c:	7a656762 	0x7a656762
+  20:	645f6c61 	0x645f6c61
+  24:	00532e73 	0x532e73
+  28:	64656d2f 	0x64656d2f
+  2c:	732f6169 	0x732f6169
+  30:	6f6c5f66 	0x6f6c5f66
+  34:	73676e6f 	0x73676e6f
+  38:	322f6e6f 	andi	t7,s1,0x6e6f
+  3c:	30373130 	andi	s7,at,0x3130
+  40:	2f313335 	sltiu	s1,t9,13109
+  44:	636e7566 	0x636e7566
+  48:	7365745f 	0x7365745f
+  4c:	6f732f74 	0x6f732f74
+  50:	732f7466 	0x732f7466
+  54:	692f6372 	0x692f6372
+  58:	0074736e 	0x74736e
+  5c:	20554e47 	addi	s5,v0,20039
+  60:	32205341 	andi	zero,s1,0x5341
+  64:	2e38312e 	sltiu	t8,s1,12590
+  68:	01003035 	0x1003035
+  6c:	Address 0x000000000000006c is out of bounds.
+
+Disassembly of section .debug_abbrev:
+
+00000000 <.debug_abbrev>:
+   0:	10001101 	b	4408 <inst_error+0x42e0>
+   4:	12011106 	beq	s0,at,4420 <inst_error+0x42f8>
+   8:	1b080301 	0x1b080301
+   c:	13082508 	beq	t8,t0,9430 <inst_error+0x9308>
+  10:	00000005 	0x5
+Disassembly of section .debug_aranges:
+
+00000000 <.debug_aranges>:
+   0:	0000001c 	0x1c
+   4:	00000002 	srl	zero,zero,0x0
+   8:	00040000 	sll	zero,a0,0x0
+	...
+  14:	00000138 	0x138
+	...
